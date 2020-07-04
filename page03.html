@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="SendPage">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/css/style03.css"/>
+</head>
+<body>
+	<div class="mui-content content SendBody">
+		<ul class="SendList">
+			<li>
+				<div>
+					<i class="iconfont icon-wenzi"></i>
+				</div>
+				<p>文字</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-tubiaozhizuo-"></i>
+				</div>
+				<p>拍摄</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-tupian"></i>
+				</div>
+				<p>相册</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-xiangjishanguangdeng"></i>
+				</div>
+				<p>秒拍</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-qiandao"></i>
+				</div>
+				<p>签到</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-xiaoxi1"></i>
+				</div>
+				<p>点评</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-24"></i>
+				</div>
+				<p>文章</p>
+			</li>
+			<li>
+				<div>
+					<i class="iconfont icon-yinle"></i>
+				</div>
+				<p>音乐</p>
+			</li>
+		</ul>
+		<button id="shutDown">
+			<i class="iconfont icon-jiahao"></i>
+		</button>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  	mui.init();
+		mui("#shutDown")[0].onclick = function(){
+			let self = plus.webview.currentWebview();
+			let opener = self.opener();//获取上一个页面
+			let indexP = plus.webview.getWebviewById("./index.html");
+			if(!indexP){
+				indexP = plus.webview.create("./index.html", "./index.html", "");
+				self.append(indexP);
+			}
+			mui.fire(indexP,'SendBtn',"");
+			opener.show('fade-in', 300);
+			plus.webview.hide(self);
+		}
+	</script>
+</body>
+</html>

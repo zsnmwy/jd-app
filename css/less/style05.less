@@ -1,0 +1,114 @@
+@import "style.less";
+.InfoHead{
+	.iconfont,.title{
+		color: @act_color;
+	}	
+	.title{
+		font-size: 36/@rem;
+	}
+	.iconfont:first-of-type{
+		font-size: 46/@rem;
+		position: relative;
+		&::after{
+			content: '\e614';
+			position: absolute;
+			left: 10/@rem;
+			top: -3/@rem;
+			font-size: 20/@rem;
+		}
+	}
+}
+.content.InfoBody{
+	.mui-search{
+		padding: 0 20/@rem;
+		input{
+			width: 100%;
+			height: 46/@rem;
+			border-radius: (46/2)/@rem;
+			border: none;
+			background: #36406a;
+		}
+		.mui-placeholder{
+			line-height: 46/@rem;
+			.mui-icon-search{
+				color: #ccc;
+			}
+		} 
+	}
+	.InfoList{
+		li{
+			padding: 0 20/@rem 26/@rem;
+			height: 102/@rem;
+			border-bottom: 2/@rem solid #36406a;
+			margin-bottom: 27/@rem;
+			.flex;
+			.InfoLeft{
+				width: 76/@rem;
+				height: 76/@rem;
+				border-radius: 30/@rem;
+				text-align: center;
+				line-height: 76/@rem;		
+			}
+			&:nth-of-type(1),&:nth-of-type(2){
+				.InfoLeft{
+					border: 3/@rem solid @act_color;
+					.iconfont{
+						color: @act_color;
+						font-size: 60/@rem;
+					}
+				}
+			}
+			&:nth-of-type(3),&:nth-of-type(8){
+				.InfoLeft{
+					.bgPic("Info01.png", 2, 1,78,596);
+				}
+			}
+			&:nth-of-type(4),&:nth-of-type(9){
+				.InfoLeft{
+					.bgPic("Info01.png", 1, 131,78,596);
+				}
+			}
+			&:nth-of-type(5),&:nth-of-type(10){
+				.InfoLeft{
+					.bgPic("Info01.png", 2, 261,78,596);
+				}
+			}
+			&:nth-of-type(6),&:nth-of-type(11){
+				.InfoLeft{
+					.bgPic("Info01.png", 2, 390,78,596);
+				}
+			}
+			&:nth-of-type(7),&:nth-of-type(12){
+				.InfoLeft{
+					.bgPic("Info01.png", 2, 521,78,596);
+				}
+			}
+			.InfoRight{
+				width: 568/@rem;
+				height: 100%;
+				.flex;
+				.rl {
+					line-height: 76/@rem;
+					font-size: 32/@rem;
+					color: #fff;
+					p:nth-of-type(1){
+						line-height: 34/@rem;
+						color: #fff;
+						font-size: 34/@rem;
+					}
+					p:nth-of-type(2){
+						color: #ccc;
+						margin-top: 10/@rem;
+						font-size: 24/@rem;
+						line-height: 24/@rem;
+					}
+				}
+				.rr .iconfont{
+					color: @act_color;
+					font-size: 40/@rem;
+					line-height: 78/@rem;
+				}
+			}
+		}
+	}
+}

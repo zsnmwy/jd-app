@@ -1,0 +1,129 @@
+@rem: 72rem;
+@act_color: #f7931e;
+@gb_color:#cccccc;
+@img: '../../img/';
+.bgPic(@url, @x, @y, @w, @h){
+	background: url('@{img}@{url}') -@x/@rem -@y/@rem no-repeat;
+	background-size: @w/@rem @h/@rem;
+}
+// *{touch-action: none;} 
+*,p{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li,ol{
+	list-style: none;
+}
+.pd{
+	padding: 0 20 / @rem;
+}
+.bdb{
+	border-bottom: 2 / @rem solid #313858;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+body{
+	background-color: #232943 !important; 
+	color: @gb_color;
+	font-size: 22 / @rem;
+}
+
+.mui-content,.mui-bar{
+	background: none;
+}
+.mui-bar{
+	padding: 0 20 / @rem;
+}
+/*头部区域样式*/
+.header{
+	.flex;
+	height: 96 / @rem;
+	line-height: 96 / @rem;
+	align-items: center;
+	box-shadow: none;
+	background-color: #232943;
+	a{
+		color: @gb_color;
+		width: auto;
+		&#mySelf{
+			width: 75 / @rem;
+			height: 75 / @rem;
+			background-color: @act_color;
+			border-radius: 35%;
+			background: url(../../img/1.png) center;
+			background-size: 80 / @rem 80 / @rem;
+		}
+		&.iconfont{
+			font-size: 42 / @rem;
+		}
+	}
+	.title{
+		width: auto;
+		font-size: 30 / @rem;
+		font-weight: normal;
+		line-height: 96 / @rem;
+		margin: 0;
+		color: @gb_color;
+		span{
+			display: inline-block;
+			line-height: 50 / @rem;
+			&.act{
+				color: @act_color;
+				border-bottom: 1 / @rem solid @act_color;
+				margin-right: 26 / @rem;
+			}
+		}
+		
+	}
+}
+/*主体内容样式*/ 
+.header~.mui-content{
+	padding-top: 98 / @rem;
+	box-sizing: initial;
+}
+/*尾部选项卡区域样式*/ 
+.footer{
+	.flex;
+	padding: 0 30 / @rem 0;
+	height: 96 / @rem;
+	border-top: 3 / @rem solid #ccc;
+	background-color: #232943;
+	.mui-tab-item{
+		width: auto;
+		display: block;
+		overflow: auto;
+		&.mui-active{
+			color: @act_color;
+			.iconfont{
+				text-shadow: 0 0 3 / @rem @act_color;
+				&.icon-shandian{
+					font-size: 45/@rem;
+				}
+			}
+			font-weight: bolder;
+		}
+	}
+	.iconfont{
+		display: block;
+		margin-top: 5 / @rem;
+		font-size: 47 / @rem;
+		&.icon-jiahao{
+			font-size: 55 / @rem;
+			margin-top: 15 / @rem;
+		}
+		&.icon-shandian{
+			font-size: 55 / @rem;
+		}
+		&.icon-xiaoxi{
+			font-size: 38 / @rem;
+		}
+	}
+	.mui-tab-label{
+		font-size: 22 / @rem;
+	}
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./fonts/iconfont/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="./css/css/style01.css" />
+	</head>
+	<body>
+		<!-- 侧滑导航根容器-->
+		<div class="mui-off-canvas-wrap  mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 菜单容器 -->
+				<aside class="mui-off-canvas-left mySelft_aside">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!-- 个人信息背景图 -->
+							<section class="myInfoBg">
+								<div>
+									<ul>
+										<li>
+											<img src="img/1.png" alt="">
+										</li>
+										<li>
+											<p>浪大了</p>
+											<p>
+												<span>
+													<i class="iconfont icon-VIP"></i>
+												</span>
+												14
+											</p>
+										</li>
+									</ul>
+									<p>跟我讲讲你运动的乐趣好吗？？</p>
+								</div>
+							</section>
+							<!-- 动态-好友-关注 -->
+							<section class="myDong">
+								<ul>
+									<li>
+										<i class="iconfont icon-wujiaoxing"></i>
+										<p>动态</p>
+									</li>
+									<li>
+										<i class="iconfont icon-haoyou"></i>
+										<p>用户</p>
+									</li>
+									<li>
+										<i class="iconfont icon-tianjiayonghu"></i>
+										<p>关注</p>
+									</li>
+								</ul>
+							</section>
+							<!-- 列表 -->
+							<ul class="myList">
+								<li>
+									<p>
+										<i class="iconfont icon-huangguan"></i>
+									</p>
+									<p>聚动会员</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-xunzhang"></i>
+									</p>
+									<p>运动成就</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-mofabang"></i>
+									</p>
+									<p>个性装扮</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-dianzan"></i>
+									</p>
+									<p>我的收藏</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-paixing"></i>
+									</p>
+									<p>我的排行</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-kecheng-"></i>
+									</p>
+									<p>我的课程</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-wodedongtai2"></i>
+									</p>
+									<p>我的动态</p>
+								</li>
+								<li>
+									<p>
+										<i class="iconfont icon-xinshouyindao"></i>
+									</p>
+									<p>新手指导</p>
+								</li>
+							</ul>
+							<!-- 底部设置 -->
+							<ul id="bottom_mySet">
+								<li>
+									<i class="iconfont icon-shezhi"></i>
+									设置
+								</li>
+								<li>
+									<i class="iconfont icon-yueliang"></i>
+									夜间
+								</li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav header ">
+					<a  id="mySelf"></a>
+					<h1 class="title">
+						<span class="act">圈子</span>
+						<span>动态</span>
+					</h1>
+					<a href="javascript:;" class="iconfont icon-saoyisao"></a>
+				</header>
+				<!-- 主页面内容容器 -->
+				<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll" id="juDong">
+						<!-- 主界面具体展示内容 -->
+						<!-- 搜索框 -->
+						<form>
+							<span class="iconfont icon-sousuo"></span>
+							<input type="text" id="jdSearch" placeholder="请输入您要搜索的关键字">
+						</form>
+						<!-- 运动达人推荐 -->
+						<section class="daren">
+							<p class="sTitle">
+								<a>
+									<span class="iconfont icon-VIP"></span>
+								</a>运动达人推荐
+							</p>
+							<ul class="darenList">
+								<li>
+									<p>
+										<img src="./img/2.png" alt="">
+									</p>
+									<p class="lTit">健身女王Miuo</p>
+								</li>
+								<li>
+									<p>
+										<img src="./img/3.png" alt="">
+									</p>
+									<p class="lTit">全球健身营地</p>
+								</li>
+								<li>
+									<p>
+										<img src="./img/4.png" alt="">
+									</p>
+									<p class="lTit">健身励志录</p>
+								</li>
+								<li>
+									<p>
+										<img src="./img/5.png" alt="">
+									</p>
+									<p class="lTit">健身女王Miuo</p>
+								</li>
+							</ul>
+						</section>
+						<!-- 运动教程 -->
+						<section class="jiaocheng">
+							<p class="sTitle">
+								<a>
+									<span class="iconfont icon-leimu"></span>
+								</a>运动教程
+							</p>
+							<div id="banner">
+								<img src="img/6.png" width="100%" height="auto">
+								<ul class="point">
+									<li></li>
+									<li class="act"></li>
+									<li></li>
+								</ul>
+							</div>
+						</section>
+						<!-- 热门动态 -->
+						<section class="dongtai">
+							<p class="sTitle">
+								<a>
+									<span class="iconfont icon-remen"></span>
+								</a>热门动态
+							</p>
+							<ul class="dtList">
+								<li>
+									<div class="top">
+										<div class="tLeft">
+											<img src="img/7.png" alt="">
+											<p>
+												<span>奔跑小帅旺</span>
+												<br />
+												<a>
+													<span class="iconfont icon-nv"></span>
+												</a> LV 30
+											</p>
+										</div>
+										<div class="tRight">
+											<p>
+												<span class="iconfont icon-tianjiayonghu"></span>
+											</p>
+											<p>9-20</p>
+										</div>
+									</div>
+									<div class="center">
+										<p>#恢复期间#</p>
+										<p>正常运动13公里第一次挑战自我，步履不停、运动不止#跑过自己#祝友友们早上好</p>
+									</div>
+									<div class="bottom">
+										<div class="bLeft">
+											<span class="iconfont icon-dizhi"></span>
+											潍坊市·寿光市正方食品有限公司
+										</div>
+										<div class="bRight">
+											<span class="iconfont icon-dianzan"></span>
+											<span>25</span>
+											<span class="iconfont icon-xiaoxi1"></span>
+											<span>25</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="top">
+										<div class="tLeft">
+											<img src="img/8.png" alt="">
+											<p>
+												<span>跑跑跑</span>
+												<br />
+												<a>
+													<span class="iconfont icon-nan"></span>
+												</a> LV 15
+											</p>
+										</div>
+										<div class="tRight">
+											<p>
+												<span class="iconfont icon-tianjiayonghu"></span>
+											</p>
+											<p>9-20</p>
+										</div>
+									</div>
+									<div class="center">
+										<p>#跑得最快的一次十公里#</p>
+										<p>虽然下了一夜的雨，路上还湿滑，但穿上了新买的特步跑鞋，心情好，跑得飞快。不过后来又开始……</p>
+									</div>
+									<div class="bottom">
+										<div class="bLeft">
+											<span class="iconfont icon-dizhi"></span>
+											南昌市·孺子路盲人按摩
+										</div>
+										<div class="bRight">
+											<span class="iconfont icon-dianzan"></span>
+											<span>25</span>
+											<span class="iconfont icon-xiaoxi1"></span>
+											<span>25</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="top">
+										<div class="tLeft">
+											<img src="img/9.png" alt="">
+											<p>
+												<span>风调雨顺</span>
+												<br />
+												<a>
+													<span class="iconfont icon-nv"></span>
+												</a> LV 8
+											</p>
+										</div>
+										<div class="tRight">
+											<p>
+												<span class="iconfont icon-tianjiayonghu"></span>
+											</p>
+											<p>9-20</p>
+										</div>
+									</div>
+									<div class="center">
+										<p>#我运动，我快乐#</p>
+										<p>
+											<img src="img/10.png">
+											<img src="img/11.png">
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="bLeft">
+											<span class="iconfont icon-dizhi"></span>
+											济南市·舜玉北路伟东新都三区
+										</div>
+										<div class="bRight">
+											<span class="iconfont icon-dianzan"></span>
+											<span>25</span>
+											<span class="iconfont icon-xiaoxi1"></span>
+											<span>25</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="top">
+										<div class="tLeft">
+											<img src="img/12.png" alt="">
+											<p>
+												<span>名副其实</span>
+												<br />
+												<a>
+													<span class="iconfont icon-nan"></span>
+												</a> LV 15
+											</p>
+										</div>
+										<div class="tRight">
+											<p>
+												<span class="iconfont icon-tianjiayonghu"></span>
+											</p>
+											<p>9-20</p>
+										</div>
+									</div>
+									<div class="center">
+										<p>雨中锻炼，有味道！</p>
+										<p>又是一场雨，雨中漫步有情趣，坚持就是胜利！加油。</p>
+									</div>
+									<div class="bottom">
+										<div class="bLeft">
+											<span class="iconfont icon-dizhi"></span>
+											南昌市·孺子路盲人按摩
+										</div>
+										<div class="bRight">
+											<span class="iconfont icon-dianzan"></span>
+											<span>25</span>
+											<span class="iconfont icon-xiaoxi1"></span>
+											<span>25</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="top">
+										<div class="tLeft">
+											<img src="img/13.png" alt="">
+											<p>
+												<span>Kimiko奇米果</span>
+												<br />
+												<a>
+													<span class="iconfont icon-nv"></span>
+												</a> LV 15
+											</p>
+										</div>
+										<div class="tRight">
+											<p>
+												<span class="iconfont icon-tianjiayonghu"></span>
+											</p>
+											<p>9-20</p>
+										</div>
+									</div>
+									<div class="center">
+										<p>#拔萝卜运动#</p>
+										<p>这次是放松版本！#块状肌肉小腿松绑救星#</p>
+										<p>
+											<img src="img/14.png" />
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="bLeft">
+											<span class="iconfont icon-dizhi"></span>
+											南昌市·孺子路盲人按摩
+										</div>
+										<div class="bRight">
+											<span class="iconfont icon-dianzan"></span>
+											<span>25</span>
+											<span class="iconfont icon-xiaoxi1"></span>
+											<span>25</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			
+			mui('.mui-scroll-wrapper').scroll({});
+		</script>
+	</body>
+</html>

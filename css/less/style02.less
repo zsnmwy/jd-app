@@ -1,0 +1,104 @@
+@import "style.less";
+/*发现页面*/
+.FindHead{
+	border-bottom: 1/@rem solid @gb_color;
+	.title{
+		color: @act_color;
+		font-size: 36/@rem;
+	}
+	.iconfont{
+		color: @act_color;
+	}
+	.pic{
+		width: 44/@rem;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+ }
+
+#FindBody{
+	.banner{
+		margin-top: 20/@rem;
+		width: 100%;
+		img {
+			width: 100%;
+			height: auto;
+		};
+	}
+	.FindNav{
+		margin-top: 10/@rem;
+		padding: 0 25/@rem;
+		border-bottom: 10/@rem solid #323858;
+		ul{
+			display: flex;
+			justify-content: space-between;
+			li{
+				.iconfont{
+					font-size: 52/@rem;
+					color: @act_color;
+				}
+				p{
+					font-size: 24/@rem;
+					line-height: 38/@rem;
+				}
+			}
+		}
+	}
+	.FindList{
+		margin-top: 10/@rem;
+		li{
+			display: flex;
+			padding: 10/@rem 20/@rem;
+			border-bottom: 1/@rem solid @gb_color;
+			.listPic{
+				width: 89/@rem;
+				height: 93/@rem;
+				background-color: #fff;
+				margin-right: 15/@rem;
+			}
+			&:nth-of-type(1),&:nth-of-type(6){
+				.listPic{
+					.bgPic("Find03.png",2,0,90,545);/*背景图混合*/
+				}
+			}
+			&:nth-of-type(2),&:nth-of-type(7){
+				.listPic{
+					.bgPic("Find03.png",1,114,90,545);/*背景图混合*/
+				}
+			}
+			&:nth-of-type(3),&:nth-of-type(8){
+				.listPic{
+					.bgPic("Find03.png",1,227,90,545);/*背景图混合*/
+				}
+			}
+			&:nth-of-type(4),&:nth-of-type(9){
+				.listPic{
+					.bgPic("Find03.png",1,340,90,545);/*背景图混合*/
+				}
+			}
+			&:nth-of-type(5),&:nth-of-type(10){
+				.listPic{
+					.bgPic("Find03.png",1,452,90,545);/*背景图混合*/
+				}
+			}
+			.listContent{
+				p{
+					line-height: 28/@rem;
+					&:first-of-type{
+						font-size: 24/@rem;
+						font-weight: bold;
+						margin-bottom: 15/@rem;
+						.FindT{
+							color: @act_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

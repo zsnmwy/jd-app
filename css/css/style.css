@@ -1,0 +1,124 @@
+*,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+.pd {
+  padding: 0 0.27777778rem;
+}
+.bdb {
+  border-bottom: 0.02777778rem solid #313858;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background-color: #232943 !important;
+  color: #cccccc;
+  font-size: 0.30555556rem;
+}
+.mui-content,
+.mui-bar {
+  background: none;
+}
+.mui-bar {
+  padding: 0 0.27777778rem;
+}
+/*头部区域样式*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  align-items: center;
+  box-shadow: none;
+  background-color: #232943;
+}
+.header a {
+  color: #cccccc;
+  width: auto;
+}
+.header a#mySelf {
+  width: 1.04166667rem;
+  height: 1.04166667rem;
+  background-color: #f7931e;
+  border-radius: 35%;
+  background: url(../../img/1.png) center;
+  background-size: 1.11111111rem 1.11111111rem;
+}
+.header a.iconfont {
+  font-size: 0.58333333rem;
+}
+.header .title {
+  width: auto;
+  font-size: 0.41666667rem;
+  font-weight: normal;
+  line-height: 1.33333333rem;
+  margin: 0;
+  color: #cccccc;
+}
+.header .title span {
+  display: inline-block;
+  line-height: 0.69444444rem;
+}
+.header .title span.act {
+  color: #f7931e;
+  border-bottom: 0.01388889rem solid #f7931e;
+  margin-right: 0.36111111rem;
+}
+/*主体内容样式*/
+.header ~ .mui-content {
+  padding-top: 1.36111111rem;
+  box-sizing: initial;
+}
+/*尾部选项卡区域样式*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.41666667rem 0;
+  height: 1.33333333rem;
+  border-top: 0.04166667rem solid #cccccc;
+  background-color: #232943;
+}
+.footer .mui-tab-item {
+  width: auto;
+  display: block;
+  overflow: auto;
+}
+.footer .mui-tab-item.mui-active {
+  color: #f7931e;
+  font-weight: bolder;
+}
+.footer .mui-tab-item.mui-active .iconfont {
+  text-shadow: 0 0 0.04166667rem #f7931e;
+}
+.footer .mui-tab-item.mui-active .iconfont.icon-shandian {
+  font-size: 0.625rem;
+}
+.footer .iconfont {
+  display: block;
+  margin-top: 0.06944444rem;
+  font-size: 0.65277778rem;
+}
+.footer .iconfont.icon-jiahao {
+  font-size: 0.76388889rem;
+  margin-top: 0.20833333rem;
+}
+.footer .iconfont.icon-shandian {
+  font-size: 0.76388889rem;
+}
+.footer .iconfont.icon-xiaoxi {
+  font-size: 0.52777778rem;
+}
+.footer .mui-tab-label {
+  font-size: 0.30555556rem;
+}

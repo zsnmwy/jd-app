@@ -1,0 +1,83 @@
+@import "style.less";
+/*发布页面*/
+.SendPage{
+	width: 100%;
+	height: 100%;
+	body{
+		width: 100%;
+		height: 100%;
+		background: url(../../img/Send01.png);
+		background-size: 100%;
+		.SendBody{
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,0.95);
+			display: flex;
+			align-items: flex-end;
+			position: relative;
+		}
+		#shutDown{
+			width: 76/@rem;
+			height: 76/@rem;
+			border-radius: 50%;
+			border: 4/@rem solid #000000;
+			position: absolute;
+			bottom: 20/@rem;
+			left: 50%;
+			margin-left: -(76/2)/@rem;
+			background: none;
+			transform: rotate(45deg);
+			.iconfont{
+				font-size: 40/@rem;
+				font-weight: bold;
+				position: absolute;
+				top: 10%;
+				left: 22%;
+			}
+		}
+		.SendList{
+			width: 100%;
+			height: 593/@rem;
+			padding: 0 54/@rem 189/@rem;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			li{
+				width: 130/@rem;
+				height: 190/@rem;
+				text-align: center;
+				div{
+					width: 100%;
+					height: 130/@rem;
+					line-height: 130/@rem;
+					border-radius: 40/@rem;
+					background-color: @act_color;
+					color: #000000;
+					.iconfont{
+						font-size: 80/@rem;
+					}
+				}
+				&:nth-of-type(1) div .iconfont,&:nth-of-type(3) div .iconfont{
+					font-size: 74/@rem;
+				}
+				&:nth-of-type(4) div .iconfont{
+					font-size: 70/@rem;
+				}
+				&:nth-of-type(5) div .iconfont,&:nth-of-type(7) div .iconfont,&:nth-of-type(8) div .iconfont{
+					font-weight: 600;
+				}
+				&:nth-of-type(6) div .iconfont{
+					font-weight: 500;
+					font-size: 100/@rem;
+				}
+				p{
+					line-height: 62/@rem;
+					color: @act_color;
+					font-size: 24/@rem;
+				}
+			}
+		}
+	}
+}
+
